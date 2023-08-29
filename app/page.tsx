@@ -1,12 +1,15 @@
 import About from '@/components/About'
+import Contact from '@/components/Contact'
 import Header from '@/components/Header'
+import Reviews from '@/components/Reviews'
+import Videos from '@/components/Videos'
 import Image from 'next/image'
 import { FaFacebook, FaSun } from 'react-icons/fa'
 
 export default function Home() {
   return (
     <>
-    <div className='w-[90%] lg:flex max-w-[1120px] mx-auto '>
+    <div className='w-[90%]  lg:flex max-w-[1120px] mx-auto '>
       <aside className='hidden lg:block lg:w-[5%] '>
         <div className='sticky top-[25%] grid gap-4 items-end justify-center'>
           <FaFacebook className="w-[2rem] h-[2rem]"/>
@@ -17,8 +20,8 @@ export default function Home() {
           </div>
         </div>
       </aside>
-      <div className='lg:w-[85%]'>
-        <div className='hidden lg:flex sticky top-0 w-[90%] mx-auto justify-between items-center py-4 z-20 bg-inherit text-textgray'>
+      <div className='lg:w-[95%]'>
+        <div className='hidden md:flex sticky top-0 w-[95%] lg:w-[90%] mx-auto justify-between items-center py-4 z-20 bg-inherit text-textgray'>
             <div className='p-4 bg-primary rounded-full text-accent'>KO</div>
             <p>Home</p>
             <p>About</p>
@@ -30,8 +33,11 @@ export default function Home() {
             </div>
           </div>
         <Header/>
-        <main className='lg:w-[90%] mx-auto'>
+        <main className='md:w-[95%] lg:w-[90%] mx-auto'>
          <About/>
+         <Videos/>
+         <Reviews/>
+         <Contact/>
         </main>
       </div>
     </div>

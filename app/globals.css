@@ -17,9 +17,9 @@
   /* --lightbg: whitesmoke; */
 }
 body{
-  /* background-color: var(--lightbg); */
+  background-color: var(--lightbg);
   
-  background-color: var(--dark);
+  /* background-color: var(--dark); */
 }
 /* .griditem{
   display: grid;

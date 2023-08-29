@@ -13,8 +13,8 @@ const config: Config = {
         textgray: "#71717a",
         accent: "#100918",
         // lightbg: "#fffbd9",
-        // textlight: "#100918",
-        textlight: "#ffffff",
+        textlight: "#100918",
+        // textlight: "#ffffff",
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
