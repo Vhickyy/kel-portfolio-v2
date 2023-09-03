@@ -21,7 +21,7 @@ export default function Home() {
         </div>
       </aside>
       <div className='lg:w-[95%]'>
-        <div className='hidden md:flex sticky top-0 w-[95%] lg:w-[90%] mx-auto justify-between items-center py-4 z-20 bg-inherit text-textgray'>
+        <nav className='hidden md:flex sticky top-0 w-[95%] lg:w-[90%] mx-auto justify-between items-center pt-8 z-20 text-textgray bg-[whitesmoke]'>
             <div className='p-4 bg-primary rounded-full text-accent'>KO</div>
             <p>Home</p>
             <p>About</p>
@@ -31,7 +31,7 @@ export default function Home() {
             <div className='border-2 border-primary p-3 rounded-md text-primary'>
               <FaSun className="w-6 h-6"/>
             </div>
-          </div>
+          </nav>
         <Header/>
         <main className='md:w-[95%] lg:w-[90%] mx-auto'>
          <About/>
