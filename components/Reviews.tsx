@@ -5,7 +5,7 @@ import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide,  } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/psagination';
+import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 export default function Reviews() {
@@ -28,11 +28,9 @@ export default function Reviews() {
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log('slide change')}
         >
-          
-        
         {reviews.map((review,index)=>{
           return(
-            <SwiperSlide>
+            <SwiperSlide key={index}>
             <div className='bg-white rounded-md p-4 shadow-md w-[15rem]'>
               <h5>{review.name}</h5>
               <p>{review.title}</p>
