@@ -6,7 +6,7 @@ export default function Header() {
         <div className='h-[17rem] w-[17rem] bg-[#fee30290] absolute top-[15%] right-0 -z-10 blur-md rounded-full'></div>
         
         <nav className='w-[90%] fixed top-4 md:hidden'>
-            <div className='w-[25rem] mx-auto  bg-primary rounded-full py-2 px-[1rem] flex items-center justify-between'>
+            <div className='w-[90%] sm:w-[25rem] mx-auto  bg-primary rounded-full py-2 px-[1rem] flex items-center justify-between'>
                 <FaHome className="h-[2rem] w-[2rem]"/>
                 <FaHome className="h-[2rem] w-[2rem]"/>
                 <FaHome className="h-[2rem] w-[2rem]"/>
