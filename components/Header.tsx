@@ -2,7 +2,7 @@ import React from 'react'
 import {FaFacebook, FaHome, FaSun} from 'react-icons/fa'
 export default function Header() {
   return (
-    <header className='w-full relative z-10 '>
+    <header className='w-[95%] md:w-[95%] lg:w-[90%] mx-auto relative z-10 '>
         <div className='h-[17rem] w-[10rem] sm:w-[17rem] bg-[#fee30290] absolute top-[15%] right-0 -z-10 blur-[7rem] rounded-full'></div>
         
         <nav className='w-[90%] fixed top-4 md:hidden'>

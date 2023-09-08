@@ -34,7 +34,7 @@ export default function Home() {
             </div>
           </nav>
         <Header/>
-        <main className='md:w-[95%] lg:w-[90%] mx-auto'>
+        <main className='w-[95%] md:w-[95%] lg:w-[90%] mx-auto'>
          <About/>
          <Experience/>
          <Videos/>
