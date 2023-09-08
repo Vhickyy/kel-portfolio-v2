@@ -1,5 +1,9 @@
 import React from 'react'
-import { FaHome } from 'react-icons/fa'
+import { FaHome, FaLocationArrow } from 'react-icons/fa';
+import { ImLocation2 } from 'react-icons/im';
+import { MdEmail } from 'react-icons/md';
+import { BsTelephoneFill } from 'react-icons/bs';
+
 
 export default function Contact() {
   return (
@@ -8,11 +12,31 @@ export default function Contact() {
         <h2 className='font-extrabold text-3xl text-primary'> 05.</h2>
         <h2 className='font-extrabold text-3xl text-accent'>Contact Me</h2>
       </div>
-      <div className='mt-10'>
-        <div>
-
+      <div className='mt-10 sm:flex flex-row-reverse justify-between '>
+        <div className='sm:w-[38%] flex flex-col gap-5'>
+          <div className='flex items-center gap-3 sm:flex-col sm:items-start lg:flex-row lg:items-center'>
+            <ImLocation2  className="text-primary w-[2.5rem] h-[2rem]"/>
+            <div>
+              <h5 className='font-bold text-lg tracking-wider text-textColor'>Location</h5>
+              <p className='text-textgray'>Lagos</p>
+            </div>
+          </div>
+          <div className='flex items-center gap-3 sm:flex-col sm:items-start lg:flex-row lg:items-center'>
+            <MdEmail  className="text-primary w-[2.5rem] h-[2rem]"/>
+            <div>
+              <h5 className='font-bold text-lg tracking-wider text-textColor'>Email</h5>
+              <p className='text-textgray'>vvvvvvvvvvvvvvv@gmail.com</p>
+            </div>
+          </div>
+          <div className='flex items-center gap-3 sm:flex-col sm:items-start lg:flex-row lg:items-center'>
+            <BsTelephoneFill  className="text-primary w-[2.5rem] h-[2rem]"/>
+            <div>
+              <h5 className='font-bold text-lg tracking-wider text-textColor'>Phone Number</h5>
+              <p className='text-textgray'>+2340000000000</p>
+            </div>
+          </div>
         </div>
-        <form className='w-full sm:w-[65%] rounded-md grid gap-4'>
+        <form className='w-full sm:w-[58%] rounded-md grid gap-4'>
           <div className='bg-white py-2 px-4 rounded-md shadow-md'>
             <label htmlFor="name" className='block text-sm text-textgray'>Name</label>
             <input type="name" id='name' className='w-full border-none outline-none caret-primary'/>

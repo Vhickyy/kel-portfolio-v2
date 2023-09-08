@@ -1,5 +1,6 @@
 import About from '@/components/About'
 import Contact from '@/components/Contact'
+import Experience from '@/components/Experience'
 import Header from '@/components/Header'
 import Reviews from '@/components/Reviews'
 import Videos from '@/components/Videos'
@@ -35,6 +36,7 @@ export default function Home() {
         <Header/>
         <main className='md:w-[95%] lg:w-[90%] mx-auto'>
          <About/>
+         <Experience/>
          <Videos/>
          <Reviews/>
          <Contact/>

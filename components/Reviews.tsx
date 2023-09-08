@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
 import reviews from '@/fakedata/reviews';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide,  } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -17,21 +17,49 @@ export default function Reviews() {
         {/* <div className='w-[7rem] h-[1px] bg-textgray'></div>
       </div> */}
       </div>
-      <div className='flex flex-wrap gap-2 mt-10 items-center justify-center'>
+      <div className='mt-8'>
         <Swiper
-          modules={[Navigation, Pagination, Scrollbar, A11y]}
-          spaceBetween={50}
-          slidesPerView={3}
-          navigation
-          pagination={{ clickable: true }}
-          scrollbar={{ draggable: true }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log('slide change')}
+          modules={[ Autoplay]}
+          autoplay={{delay:5000}}
+          loop={true}
+          spaceBetween={30}
+          slidesPerView={1}
+          // navigation
+          // pagination={{ clickable: true }}
+          // className=''
+          // scrollbar={{ draggable: true }}s
+          // onSwiper={(swiper) => console.log(swiper)}
+          // onSlideChange={() => console.log('slide change')}
+          breakpoints={{
+            640:{
+              modules:[ Autoplay],
+              autoplay:{delay:5000},
+              loop:true,
+              spaceBetween: 10,
+              slidesPerView: 2
+            },
+            710:{
+              modules:[ Autoplay],
+              autoplay:{delay:5000},
+              loop:true,
+              spaceBetween: 30,
+              slidesPerView: 2
+              
+            },
+            1000:{
+              modules:[ Autoplay],
+              autoplay:{delay:5000},
+              loop:true,
+              spaceBetween: 25,
+              slidesPerView: 3
+            }
+          
+          }}
         >
         {reviews.map((review,index)=>{
           return(
             <SwiperSlide key={index}>
-            <div className='bg-white rounded-md p-4 shadow-md w-[15rem]'>
+            <div className='bg-white rounded-md p-4 shadow-md h-[18rem] w-[80%] sm:w-[95%] sm:bg-primary md:w-full mx-auto'>
               <h5>{review.name}</h5>
               <p>{review.title}</p>
               <p>{review.review}</p>

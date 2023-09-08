@@ -9,11 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       colors:{
-        primary: "#fee302",
+        primary: "#fee302", //wont change in light and dark
         textgray: "#71717a",
-        accent: "#100918",
-        // lightbg: "#fffbd9",
-        textlight: "#100918",
+        accent: "#100918", //wont change in light and dark
+        // accent: "#fff333", //bgColor
+        textColor: "#100918", //will change in light and dark
         // textlight: "#ffffff",
       },
       backgroundImage: {
