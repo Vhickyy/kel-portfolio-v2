@@ -12,7 +12,7 @@ export default function Contact() {
         <h2 className='font-extrabold text-3xl text-primary'> 05.</h2>
         <h2 className='font-extrabold text-3xl text-accent'>Contact Me</h2>
       </div>
-      <div className='mt-10 sm:flex flex-row-reverse justify-between '>
+      <div className='mt-10 flex flex-col gap-6 sm:gap-0 sm:flex-row-reverse justify-between '>
         <div className='sm:w-[38%] flex flex-col gap-5'>
           <div className='flex items-center gap-3 sm:flex-col sm:items-start lg:flex-row lg:items-center'>
             <ImLocation2  className="text-primary w-[2.5rem] h-[2rem]"/>

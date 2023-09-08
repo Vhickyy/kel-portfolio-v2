@@ -44,7 +44,7 @@ export default function Reviews() {
           {reviews.map((review,index)=>{
             return(
               <SwiperSlide key={index}>
-                <div className='bg-white rounded-md p-4 shadow-lg h-[18rem] w-[80%] sm:w-[95%} md:w-full mx-auto'>
+                <div className='bg-white rounded-md p-4 shadow-lg h-[18rem] w-[90%] sm:w-[95%} md:w-full mx-auto'>
                   <h5>{review.name}</h5>
                   <p>{review.title}</p>
                   <p>{review.review}</p>

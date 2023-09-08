@@ -4,13 +4,12 @@ import Experience from '@/components/Experience'
 import Header from '@/components/Header'
 import Reviews from '@/components/Reviews'
 import Videos from '@/components/Videos'
-import Image from 'next/image'
 import { FaFacebook, FaSun } from 'react-icons/fa'
 
 export default function Home() {
   return (
     <>
-    <div className='w-[90%]  lg:flex max-w-[1120px] mx-auto '>
+    <div className='w-[90%] lg:flex max-w-[1120px] mx-auto'>
       <aside className='hidden lg:block lg:w-[5%] '>
         <div className='sticky top-[25%] grid gap-4 items-end justify-center'>
           <FaFacebook className="w-[2rem] h-[2rem]"/>

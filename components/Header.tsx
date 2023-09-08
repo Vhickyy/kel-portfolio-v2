@@ -5,8 +5,8 @@ export default function Header() {
     <header className='w-[95%] md:w-[95%] lg:w-[90%] mx-auto relative z-10 '>
         <div className='h-[17rem] w-[10rem] sm:w-[17rem] bg-[#fee30290] absolute top-[15%] right-0 -z-10 blur-[7rem] rounded-full'></div>
         
-        <nav className='w-[90%] fixed top-4 md:hidden'>
-            <div className='w-[90%] sm:w-[25rem] mx-auto  bg-primary rounded-full py-2 px-[1rem] flex items-center justify-between'>
+        <nav className='w-full h-10 fixed left-0 top-4'>
+            <div className='w-[80%] sm:w-[25rem] mx-auto  bg-primary rounded-full py-2 px-[1rem] flex items-center justify-between'> 
                 <FaHome className="h-[2rem] w-[2rem]"/>
                 <FaHome className="h-[2rem] w-[2rem]"/>
                 <FaHome className="h-[2rem] w-[2rem]"/>
