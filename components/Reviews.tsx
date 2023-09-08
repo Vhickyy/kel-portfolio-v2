@@ -1,11 +1,11 @@
 "use client"
 import React from 'react';
 import reviews from '@/fakedata/reviews';
-import { Autoplay } from 'swiper';
+import { Pagination,Autoplay } from 'swiper';
 import { Swiper, SwiperSlide,  } from 'swiper/react';
 import 'swiper/css';
 // import 'swiper/css/navigation';
-// import 'swiper/css/pagination';
+import 'swiper/css/pagination';
 // import 'swiper/css/scrollbar';
 import 'swiper/css/autoplay';
 
@@ -23,7 +23,7 @@ export default function Reviews() {
           spaceBetween={30}
           slidesPerView={1}
           loop={true}
-          modules={[ Autoplay]}
+          modules={[ Pagination, Autoplay]}
           autoplay={{delay:5000, disableOnInteraction: false}}
           className='mt-8 '
           breakpoints={{
@@ -44,7 +44,7 @@ export default function Reviews() {
           {reviews.map((review,index)=>{
             return(
               <SwiperSlide key={index}>
-                <div className='bg-white rounded-md p-4 shadow-md h-[18rem] w-[80%] sm:w-[95%] sm:bg-primary md:w-full mx-auto'>
+                <div className='bg-white rounded-md p-4 shadow-lg h-[18rem] w-[80%] sm:w-[95%} md:w-full mx-auto'>
                   <h5>{review.name}</h5>
                   <p>{review.title}</p>
                   <p>{review.review}</p>
