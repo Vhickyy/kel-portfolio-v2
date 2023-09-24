@@ -1,19 +1,20 @@
 "use client"
 import React, { useEffect, useState } from 'react'
 import { BsFillMoonFill, BsFillSunFill } from 'react-icons/bs';
-// const getTheme = () =>{
-//   const theme = JSON.parse(localStorage.getItem("darkTheme") as string) === true;
-//   document.body.classList.toggle("dark", theme);
-//   console.log(theme)
-//   return theme;
-// }
 function DesktopNav() {
   const getTheme = () =>{
   const theme = JSON.parse(localStorage.getItem("darkTheme") as string) === true;
   document.body.classList.toggle("dark", theme);
   return theme;
 }
-  const [dark,setDark] = useState(JSON.parse(localStorage.getItem("darkTheme") as string) === true || false)
+const darkState = () =>   {
+  let dark;
+  if(typeof window !== "undefined"){
+    dark = JSON.parse(localStorage.getItem("darkTheme") as string)
+  }
+  return dark
+}
+  const [dark,setDark] = useState(darkState())
   const toggleTheme = () => {
     setDark(!dark)
     localStorage.setItem("darkTheme",JSON.stringify(!dark));
@@ -31,8 +32,8 @@ function DesktopNav() {
       <p>Videos</p>
       <p>Projects</p>
       <p>Contact</p>
-      <div className='border-2 border-primary p-3 rounded-md text-primary'>
-        {!dark ? <BsFillSunFill className="w-6 h-6" onClick={toggleTheme}/> : <BsFillMoonFill className="w-6 h-6" onClick={toggleTheme}/>}
+      <div className='border-2 border-primary p-3 rounded-md text-primary cursor-pointer'>
+        {!dark ? <BsFillMoonFill className="w-6 h-6" onClick={toggleTheme}/> : <BsFillSunFill className="w-6 h-6" onClick={toggleTheme}/>}
       </div>
      </nav>
   )
