@@ -16,6 +16,7 @@ const config: Config = {
         textColor: "var(--textColor)", //will change in light and dark
         // textlight: "#ffffff",
         bgColor: "var(--bgColor)",
+        blur: "var(--blur)"
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

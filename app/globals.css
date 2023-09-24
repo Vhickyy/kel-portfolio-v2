@@ -8,20 +8,22 @@
   box-sizing: border-box;
 }
 :root{
-  /* --yellow: #fee30250; */
-  --yellow: orange;
+  /* --yellow: #fee302; */
+  --yellow: #c44c00;
   /* --lightbg: #fffbd9; */
   --bgColor: whitesmoke;
   /* --textColor: #100918;  */
   --textColor: #27272a;
   --textgray: #71717a;
+  --blur: #c44c0090;
   /* --lightbg: whitesmoke; */
   
 }
 .dark{
   --bgColor: #100918;
-  --textColor: #fff333;
+  --textColor: #ffffff;
   --yellow: #fee302;
+  --blur: #fee30290;
 }
 body{
   background-color: var(--bgColor);
