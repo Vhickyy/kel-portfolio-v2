@@ -1,5 +1,6 @@
 import About from '@/components/About'
 import Contact from '@/components/Contact'
+import DesktopNav from '@/components/DesktopNav'
 import Experience from '@/components/Experience'
 import Header from '@/components/Header'
 import Reviews from '@/components/Reviews'
@@ -7,6 +8,8 @@ import Videos from '@/components/Videos'
 import { FaFacebook, FaSun } from 'react-icons/fa'
 
 export default function Home() {
+  
+
   return (
     <>
     <div className='w-[90%] lg:flex max-w-[1120px] mx-auto'>
@@ -21,17 +24,7 @@ export default function Home() {
         </div>
       </aside>
       <div className='lg:w-[95%]'>
-        <nav className='hidden md:flex sticky top-0 w-[95%] lg:w-[90%] mx-auto justify-between items-center pt-8 z-20 text-textgray bg-[whitesmoke]'>
-            <div className='p-4 bg-primary rounded-full text-accent'>KO</div>
-            <p>Home</p>
-            <p>About</p>
-            <p>Videos</p>
-            <p>Projects</p>
-            <p>Contact</p>
-            <div className='border-2 border-primary p-3 rounded-md text-primary'>
-              <FaSun className="w-6 h-6"/>
-            </div>
-          </nav>
+        <DesktopNav/>
         <Header/>
         <main className='w-[95%] md:w-[95%] lg:w-[90%] mx-auto'>
          <About/>

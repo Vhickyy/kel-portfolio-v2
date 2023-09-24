@@ -9,12 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors:{
-        primary: "#fee302", //wont change in light and dark
-        textgray: "#71717a",
+        primary: "var(--yellow)", //wont change in light and dark
+        textgray: "var(--textgray)",
         accent: "#100918", //wont change in light and dark
         // accent: "#fff333", //bgColor
-        textColor: "#100918", //will change in light and dark
+        textColor: "var(--textColor)", //will change in light and dark
         // textlight: "#ffffff",
+        bgColor: "var(--bgColor)",
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

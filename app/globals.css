@@ -8,17 +8,20 @@
   box-sizing: border-box;
 }
 :root{
-  --yellow: #fee302;
+  /* --yellow: #fee30250; */
+  --yellow: orange;
   /* --lightbg: #fffbd9; */
   --bgColor: whitesmoke;
-  /* --bgColor: #100918; */
+  /* --textColor: #100918;  */
   --textColor: #27272a;
   --textgray: #71717a;
   /* --lightbg: whitesmoke; */
+  
 }
 .dark{
   --bgColor: #100918;
   --textColor: #fff333;
+  --yellow: #fee302;
 }
 body{
   background-color: var(--bgColor);
