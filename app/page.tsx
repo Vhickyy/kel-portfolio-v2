@@ -14,7 +14,7 @@ export default function Home() {
     <>
     <div className='w-[90%] lg:flex max-w-[1120px] mx-auto'>
       <aside className='hidden lg:block lg:w-[5%] '>
-        <div className='sticky top-[25%] grid gap-4 items-end justify-center'>
+        <div className='sticky top-[25%] grid gap-4 items-end justify-center text-textColor'>
           <FaFacebook className="w-[2rem] h-[2rem]"/>
           <FaFacebook className="w-[2rem] h-[2rem]"/>
           <FaFacebook className="w-[2rem] h-[2rem]"/>
