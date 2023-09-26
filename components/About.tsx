@@ -5,7 +5,7 @@ function About() {
     <section className='pt-[8rem]'>
       {/* <div className='flex items-center justify-center'> */}
         {/* <h2 className='font-extrabold text-3xl text-primary'> 01.</h2> */}
-        <h2 className='font-extrabold text-3xl text-textColor text-center'>About Me</h2>
+        <h2 className='font-extrabold text-2xl sm:text-3xl text-textColor text-center'>About Me</h2>
         {/* <div className='w-[7rem] h-[1px] bg-textgray'></div> */}
       {/* </div> */}
       <div>
