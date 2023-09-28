@@ -4,6 +4,7 @@ import DesktopNav from '@/components/DesktopNav'
 import Experience from '@/components/Experience'
 import Header from '@/components/Header'
 import Reviews from '@/components/Reviews'
+import Skills from '@/components/Skills'
 import Videos from '@/components/Videos'
 import { FaFacebook, FaSun } from 'react-icons/fa'
 
@@ -28,6 +29,7 @@ export default function Home() {
         <Header/>
         <main className='w-[95%] md:w-[95%] lg:w-[90%] mx-auto'>
          <About/>
+         <Skills/>
          <Experience/>
          <Videos/>
          <Reviews/>
