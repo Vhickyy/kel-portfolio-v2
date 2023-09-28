@@ -57,12 +57,12 @@ function Skills() {
         <h2 className='font-extrabold text-2xl sm:text-3xl text-textColor text-center'>Area of Expertise</h2>
         {/* <div className='w-[7rem] h-[1px] bg-textgray'></div> */}
       {/* </div> */}
-      <div className='flex flex-wrap gap-x-3 gap-y-4 mt-8  justify-center items-center'>
+      <div className='flex flex-wrap gap-x-4 gap-y-4 mt-12  justify-between items-center'>
         {skillset.map((skill,index)=>{
           return (
-            <div className='w-fit bg-primary p-4 rounded-lg'>
+            <div className='w-fit h-[7rem] bg-primary py-4 px-3 rounded-lg text-center grow' key={index}>
               <h4>{skill.skill}</h4>
-              <p>{skill.grade}</p>
+              <p>{skill.grade}%</p>
             </div>
           )
         })}
