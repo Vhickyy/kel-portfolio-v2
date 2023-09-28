@@ -60,9 +60,12 @@ function Skills() {
       <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-3 gap-y-4 mt-12  justify-between items-center '>
         {skillset.map((skill,index)=>{
           return (
-            <div className='h-[7rem] bg-white py-4 px-2 rounded-lg text-center grow shadow-lg' key={index}>
+            <div className='group h-[7rem] bg-bgColor text-inverse py-4 px-2 rounded-lg text-center grow shadow-lg border-2 border-primary relative grid items-center' key={index}>
               <h4>{skill.skill}</h4>
-              <p>{skill.grade}%</p>
+              {/* <p>{skill.grade}%</p> */}
+              <div className="absolute inset-0">
+                <p>{skill.grade}%</p> 
+              </div>
             </div>
           )
         })}

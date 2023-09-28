@@ -12,6 +12,7 @@
   --yellow: #e2b808;
   /* --lightbg: #fffbd9; */
   --bgColor: whitesmoke;
+  --inverse: #100918;
   /* --textColor: #100918;  */
   --textColor: #27272a;
   --textgray: #71717a;
@@ -21,6 +22,7 @@
 }
 .dark{
   --bgColor: #100918;
+  --inverse: whitesmoke;
   --textColor: #ffffff;
   --yellow: #fee302;
   --blur: #fee30290;
