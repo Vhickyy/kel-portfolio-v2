@@ -61,7 +61,7 @@ export default function Videos() {
             </div>
           )
         })}
-        <button>More Videos</button>
+        <button className='w-[10rem] text-lg tracking-wide border-primary border-2 py-2 px-4 rounded-lg text-primary font-medium mx-auto hover:transform hover:scale-105 hover:duration-200'>More Videos</button>
       </div>
     </section>
   )
