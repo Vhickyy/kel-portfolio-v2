@@ -61,11 +61,13 @@ function Skills() {
         {skillset.map((skill,index)=>{
           return (
             <div className='group h-[7rem] bg-bgColor text-inverse  rounded-lg text-center grow shadow-lg border-2 border-primary py-4 px-2 relative grid items-center' key={index}>
+              <h4>{skill.skill}</h4>
+              <p>{skill.grade}%</p>
               {/* <div className='absolute top-[50%] left-[50%] transform -translate-y-[50%] -translate-x-[50%] w-full px-2'> */}
-                <h4>{skill.skill}</h4>
-                <p>{skill.grade}%</p>
+                {/* <h4>{skill.skill}</h4> */}
+                {/* <p>{skill.grade}%</p> */}
               {/* </div> */}
-              <div className="absolute bottom-0 left-0 right-0 bg-yellow-300 h-0 group-hover:h-full transition-all duration-200">
+              <div className="absolute bottom-0 left-0 right-0 bg-primary h-0 group-hover:h-full transition-all duration-200">
                 {/* <p>{skill.grade}%</p>  */}
               </div>
             </div>

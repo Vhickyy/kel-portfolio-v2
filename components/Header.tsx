@@ -19,7 +19,7 @@ export default function Header() {
             <h1 className="text-textColor text-3xl font-extrabold mt-6 tracking-wide md:text-5xl leading-normal md:leading-normal ">Kelechi Augustine Okorie
             <br/>
             - <span className='text-primary'>Graphic Designer.</span></h1>
-            <p className='text-textgray leading-loose mt-6 md:w-[40rem] tracking-wider'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, aut quisquam. Esse doloribus accusamus, asperiores voluptatem corporis sit alias soluta,  quod voluptate temporibus ullam.</p>
+            <p className='text-textgray leading-loose mt-6 md:w-[40rem] tracking-wider'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, aut quisquam. Esse doloribus. Esse doloribus.</p>
         </div>
         <div className=' mt-6 flex gap-4'>
           <FaFacebook className="h-[1.5rem] w-[1.5rem]"/>
