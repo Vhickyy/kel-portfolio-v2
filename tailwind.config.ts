@@ -17,7 +17,8 @@ const config: Config = {
         // textlight: "#ffffff",
         bgColor: "var(--bgColor)",
         blur: "var(--blur)",
-        inverse: "var(--inverse)"
+        inverse: "var(--inverse)",
+        bgGray: "var(--bgGray)"
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

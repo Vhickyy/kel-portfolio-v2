@@ -17,6 +17,7 @@
   --textColor: #27272a;
   --textgray: #71717a;
   --blur: #e2b80899;
+  --bgGray: #f1f5f9;
   /* --lightbg: whitesmoke; */
   
 }
@@ -26,6 +27,8 @@
   --textColor: #ffffff;
   --yellow: #fee302;
   --blur: #fee30290;
+  --bgGray: #0f172a;
+  
 }
 body{
   background-color: var(--bgColor);

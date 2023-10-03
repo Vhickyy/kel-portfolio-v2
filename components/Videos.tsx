@@ -45,7 +45,7 @@ export default function Videos() {
       <div className=' grid gap-x-4 gap-y-8 mt-8 sm:grid-cols-2 xl:grid-cols-3'>
         {videos.map((video,index)=>{
           return (
-            <div key={index} className='rounded-lg overflow-hidden border border-primary text-textColor relative'>
+            <div key={index} className='rounded-lg overflow-hidden  text-textColor relative shadow-md'>
               <div className="relative">
                 <Image
                 alt="youube video"
@@ -54,17 +54,17 @@ export default function Videos() {
                 height={300}
                 className='w-full'
                   />
-                  <div className="absolute h-4 w-4 -bottom-[1.2] left-0 bg-bgColor rounded-tl-2xl">
+                  {/* <div className="absolute h-4 w-4 -bottom-[1.2] left-0 bg-bgColor rounded-tl-2xl">
                     <div className="absolute h-4 w-4 -bottom-[1.2] left-0 bg-[#fff302] -z-10"></div>
                   </div>
                   <div className="absolute h-4 w-4 -bottom-[1.1] right-0 bg-bgColor rounded-tr-2xl">
                     <div className="absolute h-4 w-4 -bottom-[1.2] left-0 bg-[#fff302] -z-10"></div>
-                  </div>
+                  </div> */}
               </div>
-               <div className='p-4'>
-                <h4>{video.name}</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque perferendis error nostrum mollitia.</p>
-                <a href="#">Watch video</a>
+               <div className='p-8 bg-bgGray flex flex-col gap-4'>
+                <h4 className='text-center text-lg md:text-2xl font-bold capitalize'>{video.name}</h4>
+                <p className='text-gray-500'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque perferendis error... nosum mollitia.</p>
+                {/* <button className='bg-primary p-2 text-textColor'><a href="#">Icon</a></button> */}
                </div>
             </div>
           )
