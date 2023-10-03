@@ -54,8 +54,12 @@ export default function Videos() {
                 height={300}
                 className='w-full'
                   />
-                  <div className="absolute h-4 w-4 -bottom-[1.2] left-0 bg-red-400 rounded-tl-lg"></div>
-                  <div className="absolute h-4 w-4 -bottom-[1.1] right-0 bg-red-700 rounded-tr-lg"></div>
+                  <div className="absolute h-4 w-4 -bottom-[1.2] left-0 bg-bgColor rounded-tl-2xl">
+                    <div className="absolute h-4 w-4 -bottom-[1.2] left-0 bg-[#fff302] -z-10"></div>
+                  </div>
+                  <div className="absolute h-4 w-4 -bottom-[1.1] right-0 bg-bgColor rounded-tr-2xl">
+                    <div className="absolute h-4 w-4 -bottom-[1.2] left-0 bg-[#fff302] -z-10"></div>
+                  </div>
               </div>
                <div className='p-4'>
                 <h4>{video.name}</h4>
@@ -67,7 +71,7 @@ export default function Videos() {
         })}
       </div>
       <div className="w-full flex justify-center items-center">
-        <button className='w-[10rem] mx-auto mt-6 text-lg tracking-wide border-primary border-2 py-2 px-4 rounded-lg text-primary font-medium  hover:transform hover:scale-105 hover:duration-200 '>View More Videos</button>
+        <button className='mx-auto mt-6 text-md sm:text-lg tracking-wide border-primary border-2 py-2 px-4 rounded-lg text-primary font-medium  hover:transform hover:scale-105 hover:duration-200 '>View More Videos</button>
       </div>
       {/* mt-6 text-lg tracking-wide border-primary border-2 py-2 px-4 rounded-lg text-primary font-medium  hover:transform hover:scale-105 hover:duration-200  */}
     </section>
