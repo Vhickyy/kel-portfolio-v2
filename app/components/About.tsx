@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import Img from "../assets/aboutImg3.png"
+import Img from "../../assets/aboutImg3.png"
 
 function About() {
   return (

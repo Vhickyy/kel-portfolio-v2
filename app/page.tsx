@@ -1,18 +1,19 @@
-import About from '@/components/About'
-import Contact from '@/components/Contact'
-import DesktopNav from '@/components/DesktopNav'
-import Experience from '@/components/Experience'
-import Header from '@/components/Header'
-import Reviews from '@/components/Reviews'
-import Skills from '@/components/Skills'
-import Videos from '@/components/Videos'
-import { FaFacebook, FaSun } from 'react-icons/fa'
+import About from '@/app/components/About'
+import Contact from '@/app/components/Contact'
+import DesktopNav from '@/app/components/DesktopNav'
+import Experience from '@/app/components/Experience'
+import Header from '@/app/components/Header'
+import Reviews from '@/app/components/Reviews'
+import Skills from '@/app/components/Skills'
+import Videos from '@/app/components/Videos'
+import { FaFacebook, FaSun } from 'react-icons/fa';
+import { ThemeContextProvider } from './context/ThemeContext'
 
 export default function Home() {
   
 
   return (
-    <>
+    <ThemeContextProvider>
     <div className='w-[90%] lg:flex max-w-[1120px] mx-auto'>
       <aside className='hidden lg:block lg:w-[5%] '>
         <div className='sticky top-[25%] grid gap-4 items-end justify-center text-textColor'>
@@ -37,6 +38,6 @@ export default function Home() {
         </main>
       </div>
     </div>
-    </>
+    </ThemeContextProvider>
   )
 }
