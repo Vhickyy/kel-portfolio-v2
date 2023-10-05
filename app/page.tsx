@@ -7,13 +7,13 @@ import Reviews from '@/app/components/Reviews'
 import Skills from '@/app/components/Skills'
 import Videos from '@/app/components/Videos'
 import { FaFacebook, FaSun } from 'react-icons/fa';
-import { ThemeContextProvider } from './context/ThemeContext'
+// import { ThemeContextProvider } from './context/ThemeContext'
 
 export default function Home() {
   
 
   return (
-    <ThemeContextProvider>
+    // <ThemeContextProvider>
     <div className='w-[90%] lg:flex max-w-[1120px] mx-auto'>
       <aside className='hidden lg:block lg:w-[5%] '>
         <div className='sticky top-[25%] grid gap-4 items-end justify-center text-textColor'>
@@ -38,6 +38,6 @@ export default function Home() {
         </main>
       </div>
     </div>
-    </ThemeContextProvider>
+    // </ThemeContextProvider>
   )
 }
