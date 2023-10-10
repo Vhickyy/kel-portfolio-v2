@@ -1,7 +1,8 @@
 "use client"
-import { ReactNode, createContext, useContext, useState } from "react";
+import { ReactNode, createContext, useContext, useEffect, useState } from "react";
 type ThemeProp = {
     theme : boolean
+    toggleTheme: ()=>void
 }
 const ThemeContext = createContext({} as ThemeProp);
 type ChildrenProp = {
@@ -12,10 +13,20 @@ export const ThemeContextProvider = ({children}: ChildrenProp) => {
     const toggleTheme = () => {
     setTheme(!theme)
     localStorage.setItem("darkTheme",JSON.stringify(!theme));
-    // document.body.classList.toggle("dark",!theme);
+    document.body.classList.toggle("dark",!theme);
   }
+  const getTheme = () =>{
+    const theme = JSON.parse(localStorage.getItem("darkTheme") as string) === true;
+    document.body.classList.toggle("dark", theme);
+    setTheme(theme);
+    return theme;
+    }
+    useEffect(()=>{
+        getTheme()
+        console.log(theme);
+    },[])
     return (
-        <ThemeContext.Provider value={{theme}}>
+        <ThemeContext.Provider value={{theme, toggleTheme}}>
             <div>
                 {children}
             </div>
