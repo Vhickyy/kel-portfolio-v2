@@ -2,19 +2,21 @@ import React from 'react'
 import ThemeButton from '../components/ThemeButton'
 import useThemeContext from '../context/ThemeContext';
 import Navbar from './components/Navbar';
+import Link from 'next/link';
 
 function dashboard() {
   // const {theme} = useThemeContext()
   // console.log(theme);
   
   return (
-    <div className='w-[90%] max-w-[1120px] mx-auto'>
-      <Navbar/>
+    <>
+      {/* <Navbar/> */}
      <div className='h-full text-white bg-bgColor'>
       <div>
         <h1 className='text-4xl font-bold text-center m-12'>Welcome back Odogwu Canva.</h1>
         <section className='grid md:grid-cols-2 gap-5 mt-12 w-[80%] mx-auto md:w-[70%]'>
           <div >
+            <Link href="./skills">skills</Link>
             <h3>Skills</h3>
             <p>Design</p>
             <p>100%</p>
@@ -48,7 +50,7 @@ function dashboard() {
       </div>
      </div>
      {/* <ThemeButton/> */}
-    </div>
+    </>
   )
 }
 
