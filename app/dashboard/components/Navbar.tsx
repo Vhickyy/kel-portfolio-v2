@@ -12,11 +12,11 @@ function Navbar() {
                 <FaHamburger />
             </div>
             <div className='hidden md:flex justify-between w-[70%]'>
-                <Link href={"./skills"}>Skills</Link>
-                <Link href={"./experience"}>Experience</Link>
-                <Link href={"./video"}>Videos</Link>
-                <Link href={"./project"}>Projects</Link>
-                <Link href={"./review"}>Reviews</Link>
+                <Link href={"skills"}>Skills</Link>
+                <Link href={"experience"}>Experience</Link>
+                <Link href={"video"}>Videos</Link>
+                <Link href={"project"}>Projects</Link>
+                <Link href={"review"}>Reviews</Link>
             </div>
             <div className='hidden md:block border-2 border-primary p-3 rounded-md text-primary cursor-pointer'>
                 <ThemeButton/>

@@ -12,35 +12,36 @@ function dashboard() {
     <>
      <div className='h-full bg-bgColor text-textColor'>
       <div>
-        <h1 className='text-4xl font-bold text-center m-12'>Welcome back - <span className='text-primary'>Odogwu Canva. 🙌💛🖤</span></h1>
-        <section className='grid md:grid-cols-2 gap-5 mt-12 w-[80%] mx-auto md:w-[70%]'>
-          <div >
-            <Link href={"/dashboard/skills"}>Skills</Link>
+        <h1 className='text-2xl md:text-4xl font-bold text-center m-6'>Welcome back - <span className='text-primary'>Odogwu Canva. 🙌💛🖤</span></h1>
+        <section className="grid place-items-center grid-cols-2 gap-5 mt-12 mb-8 w-[80%] mx-auto md:w-[70%]">
+          {/* className='grid md:grid-cols-2 gap-5 mt-12 mb-8 w-[80%] mx-auto md:w-[70%]' */}
+          <div className='w-[7rem] text-center'>
+            <Link href={"skills"} className='text-primary'>Skills</Link>
             <p>Design</p>
             <p>100%</p>
           </div>
-          <div>
-            <Link href="dashboard/experience">Experience</Link>
+          <div className='w-[7rem] text-center'>
+            <Link href={"experience"} className='text-primary'>Experience</Link>
             <p>Design</p>
             <p>100%</p>
           </div>
-          <div>
-            {/* <Link href="./project">Project</Link> */}
+          <div className='w-[7rem] text-center'>
+            <Link href="project" className='text-primary'>Project</Link>
             <p>Design</p>
             <p>100%</p>
           </div>
-          <div>
-            {/* <Link href="./video">Video</Link> */}
+          <div className='w-[7rem] text-center'>
+            <Link href="video" className='text-primary'>Videos</Link>
             <p>Design</p>
             <p>100%</p>
           </div>
-          <div>
-            {/* <Link href="./skills">Review</Link> */}
+          <div className='w-[7rem] text-center'>
+            <Link href="./skills" className='text-primary'>Review</Link>
             <p>Design</p>
             <p>100%</p>
           </div>
-          <div>
-            {/* <Link href="./skills">Contact</Link> */}
+          <div className='w-[7rem] text-center'>
+            <Link href="./skills" className='text-primary'>Contact</Link>
             <p>Design</p>
             <p>100%</p>
           </div>
