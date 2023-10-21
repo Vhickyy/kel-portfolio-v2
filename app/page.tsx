@@ -7,6 +7,7 @@ import Reviews from '@/app/components/Reviews'
 import Skills from '@/app/components/Skills'
 import Videos from '@/app/components/Videos'
 import { FaFacebook, FaSun } from 'react-icons/fa';
+import ThemeButton from './components/ThemeButton'
 // import { ThemeContextProvider } from './context/ThemeContext'
 
 export default function Home() {
@@ -36,6 +37,9 @@ export default function Home() {
          <Reviews/>
          <Contact/>
         </main>
+      </div>
+      <div className='fixed bottom-8 right-10 md:hidden border-2 border-primary p-3 rounded-[50%] text-primary cursor-pointer'>
+        <ThemeButton/>
       </div>
     </div>
     // </ThemeContextProvider>

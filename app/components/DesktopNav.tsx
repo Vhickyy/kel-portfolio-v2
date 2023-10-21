@@ -18,7 +18,9 @@ function DesktopNav() {
           </div>
         )
       })}
-      <ThemeButton/>
+      <div className='border-2 border-primary p-3 rounded-md text-primary cursor-pointer'>
+        <ThemeButton/>
+      </div>
      </nav>
   )
 }

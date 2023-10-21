@@ -1,27 +1,28 @@
 import ThemeButton from '@/app/components/ThemeButton'
+import Link from 'next/link'
 import React from 'react'
 import { FaHamburger } from 'react-icons/fa'
 
 function Navbar() {
   return (
-    <div className='text-white py-6'>
+    <nav className='text-textgray py-6'>
         <div className='flex justify-between items-center'>
-            <div className='p-4 bg-primary rounded-full text-accent'>KO</div>
+            <Link href={"/"} className='p-4 bg-primary rounded-full text-accent'>KO</Link>
             <div className='border-2 border-primary p-3 rounded-md text-primary cursor-pointer md:hidden'>
                 <FaHamburger />
             </div>
             <div className='hidden md:flex justify-between w-[70%]'>
-                <p>Skills</p>
-                <p>Experience</p>
-                <p>Videos</p>
-                <p>Projects</p>
-                <p>Reviews</p>
+                <Link href={"./skills"}>Skills</Link>
+                <Link href={"./experience"}>Experience</Link>
+                <Link href={"./video"}>Videos</Link>
+                <Link href={"./project"}>Projects</Link>
+                <Link href={"./review"}>Reviews</Link>
             </div>
-            <div className='hidden md:block'>
+            <div className='hidden md:block border-2 border-primary p-3 rounded-md text-primary cursor-pointer'>
                 <ThemeButton/>
             </div>
         </div>
-    </div>
+    </nav>
   )
 }
 

@@ -1,13 +1,13 @@
 import Link from 'next/link'
 import React from 'react'
 
-function page() {
+function skills() {
   return (
     <div className='text-white'>
-    <div>page</div>
-    <Link href={"."}>back</Link>
+    <div>skills</div>
+    <Link href={"./me"}>back</Link>
     </div>
   )
 }
 
-export default page
+export default skills
