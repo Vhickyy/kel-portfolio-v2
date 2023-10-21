@@ -1,8 +1,13 @@
 import React from 'react'
+import Videos from "@/app/components/Videos"
 
 function page() {
   return (
-    <div>page</div>
+    <div className='text-white'>
+    {/* <div>skills</div> */}
+    {/* <Link href={"./me"}>back</Link> */}
+    <Videos mode/>
+    </div>
   )
 }
 
