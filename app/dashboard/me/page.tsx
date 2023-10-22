@@ -14,34 +14,33 @@ function dashboard() {
       <div>
         <h1 className='text-2xl md:text-4xl font-bold text-center m-6'>Welcome back - <span className='text-primary'>Odogwu Canva. 🙌💛🖤</span></h1>
         <section className="grid place-items-center grid-cols-2 gap-5 mt-12 mb-8 w-[80%] mx-auto md:w-[70%]">
-          {/* className='grid md:grid-cols-2 gap-5 mt-12 mb-8 w-[80%] mx-auto md:w-[70%]' */}
           <div className='w-[7rem] text-center'>
-            <Link href={"skills"} className='text-primary'>Skills</Link>
+            <h3 className='text-primary text-lg font-semibold tracking-wider mb-3'><Link href={"skills"} >Skills</Link></h3>
             <p>Design</p>
             <p>100%</p>
           </div>
           <div className='w-[7rem] text-center'>
-            <Link href={"experience"} className='text-primary'>Experience</Link>
+            <h3 className='text-primary text-lg font-semibold tracking-wider mb-3'><Link href={"experience"}>Experience</Link></h3>
             <p>Design</p>
             <p>100%</p>
           </div>
           <div className='w-[7rem] text-center'>
-            <Link href="project" className='text-primary'>Project</Link>
+            <h3 className='text-primary text-lg font-semibold tracking-wider mb-3'><Link href="project">Project</Link></h3>
             <p>Design</p>
             <p>100%</p>
           </div>
           <div className='w-[7rem] text-center'>
-            <Link href="video" className='text-primary'>Videos</Link>
+            <h3 className='text-primary text-lg font-semibold tracking-wider mb-3'><Link href="video" className='text-primary'>Videos</Link></h3>
             <p>Design</p>
             <p>100%</p>
           </div>
           <div className='w-[7rem] text-center'>
-            <Link href="./skills" className='text-primary'>Review</Link>
+            <h3 className='text-primary text-lg font-semibold tracking-wider mb-3'><Link href="./skills">Review</Link></h3>
             <p>Design</p>
             <p>100%</p>
           </div>
           <div className='w-[7rem] text-center'>
-            <Link href="./skills" className='text-primary'>Contact</Link>
+            <h3 className='text-primary text-lg font-semibold tracking-wider mb-3'><Link href="./skills">Contact</Link></h3>
             <p>Design</p>
             <p>100%</p>
           </div>
