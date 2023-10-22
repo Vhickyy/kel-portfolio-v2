@@ -31,7 +31,7 @@ const experience = [
 ]
 function Experience({mode}:exper) {
   return (
-    <section className='pt-[8rem]'>
+    <section className={mode ? 'pt-[2rem]' : 'pt-[8rem]'}>
         <h2 className='font-extrabold text-2xl sm:text-3xl text-textColor text-center'>Experience</h2>
       <div className='text-textgray flex flex-col sm:flex-row flex-wrap justify-between gap-y-6 mt-12'>
         {experience.map((exp,index)=>{
