@@ -12,7 +12,7 @@ function About() {
         <h2 className='font-extrabold text-2xl sm:text-3xl text-textColor text-center'>About Me</h2>
       {/* </div> */}
       <div className='mt-6 flex gap-4 flex-col sm:flex-row-reverse sm:items-center sm:justify-between'>
-        <motion.div className='relative w-full h-[20rem] bg-primary sm:w-[35%] rounded-lg overflow-hidden'
+        <motion.div className='relative w-full h-[20rem] bg-primary sm:w-[35%] rounded-lg overflow-x-hidden'
         initial={{x:100}}
         whileInView={{x:0}}
         transition={{duration:1}}

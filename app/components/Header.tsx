@@ -1,6 +1,8 @@
 "use client"
 import React from 'react'
 import {FaFacebook, FaHome, FaYoutube, FaInstagram} from 'react-icons/fa';
+import {AiOutlineYoutube} from "react-icons/ai"
+import {BsFillPersonFill, BsFillLaptopFill} from "react-icons/bs"
 import {motion} from "framer-motion";
 export default function Header() {
   return (
@@ -9,8 +11,8 @@ export default function Header() {
         <nav className='w-full h-10 fixed left-0 top-4'>
             <div className='w-[80%] sm:w-[25rem] mx-auto  bg-primary rounded-full py-2 px-[1rem] flex items-center justify-between'> 
                 <FaHome className="h-[2rem] w-[2rem]"/>
-                <FaHome className="h-[2rem] w-[2rem]"/>
-                <FaHome className="h-[2rem] w-[2rem]"/>
+                <BsFillPersonFill className="h-[2rem] w-[2rem]"/>
+                <BsFillLaptopFill className="h-[2rem] w-[2rem]"/>
                 <FaYoutube className="h-[2rem] w-[2rem]"/>
                 <FaHome className="h-[2rem] w-[2rem]"/>
             </div>
@@ -31,10 +33,10 @@ export default function Header() {
         whileInView={{opacity:1,y:0}}
         transition={{duration:1}}
         >
-          <div className=' mt-6 flex gap-4 text-primary'>
+          <div className=' mt-6 flex gap-4 text-primary items-center lg:hidden'>
             <FaFacebook className="h-[1.5rem] w-[1.5rem]"/>
             <FaInstagram className="h-[1.5rem] w-[1.5rem]"/>
-            <FaYoutube className="h-[1.5rem] w-[1.5rem]"/>
+            <FaYoutube className="h-[2rem] w-[1.5rem]"/>
           </div>
           <div className='flex gap-4 mt-6'>
             <button className='text-lg tracking-wide border-primary border-2 py-2 px-4 rounded-lg text-primary font-medium'>Download CV</button>
