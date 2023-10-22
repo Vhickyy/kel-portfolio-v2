@@ -16,8 +16,8 @@ export default function Header() {
             </div>
         </nav>
         <motion.div className="pt-[10rem] md:pt-[4rem]"
-        initial={{x:-100}}
-        whileInView={{x:0}}
+        initial={{opacity:0.5, x:-200}}
+        whileInView={{opacity:1,x:0}}
         transition={{duration:1}}
         >
             <p className="text-primary text-lg">Hi, my name is</p>
