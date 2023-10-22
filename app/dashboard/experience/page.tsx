@@ -1,8 +1,11 @@
+import Experience from '@/app/components/Experience'
 import React from 'react'
 
 function page() {
   return (
-    <div>page</div>
+    <div>
+      <Experience mode/>
+    </div>
   )
 }
 

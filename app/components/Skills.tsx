@@ -57,7 +57,7 @@ function Skills({mode}:skills) {
   return (
     <section className={mode ? 'pt-[2rem]' : 'pt-[8rem]' }>
       <h2 className='font-extrabold text-2xl sm:text-3xl text-textColor text-center'>Area of Expertise</h2>
-      <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-3 gap-y-4 mt-12  justify-between items-center '>
+      <div className={`grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-3 gap-y-4  justify-between items-center ${mode ? "mt-8" : "mt-12"} `}>
         {skillset.map((skill,index)=>{
           return (
             <div className='group h-[7rem] bg-bgColor text-inverse  rounded-lg text-center grow shadow-lg border-2 border-primary py-4 px-2 relative grid items-center' key={index}>

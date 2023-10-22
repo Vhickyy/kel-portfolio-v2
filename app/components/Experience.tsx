@@ -1,4 +1,7 @@
 import React from 'react'
+interface exper {
+  mode?: boolean
+}
 const experience = [
   {
     workplace: "SVA CREATIVE | United Kingdom",
@@ -26,17 +29,21 @@ const experience = [
     year: "2020-2021"
   },
 ]
-function Experience() {
+function Experience({mode}:exper) {
   return (
     <section className='pt-[8rem]'>
         <h2 className='font-extrabold text-2xl sm:text-3xl text-textColor text-center'>Experience</h2>
-      <div className='text-textgray'>
+      <div className='text-textgray flex flex-col sm:flex-row flex-wrap justify-between gap-y-6 mt-12'>
         {experience.map((exp,index)=>{
           return (
-            <div key={index}>
-              <p>{exp.workplace}</p>
-              <p>{exp.role}</p>
-              <p>{exp.year}</p>
+            <div className='relative sm:w-[50%]' key={index}>
+              <div className='pl-8'>
+                <p>{exp.year}</p>
+                <p>{exp.workplace}</p>
+                <p>{exp.role}</p>
+              </div>
+              <div className='absolute top-1 left-0 h-4 w-4 rounded-full bg-primary'></div>
+              <div className='absolute h-full w-[1px] top-1 left-2 bg-primary'></div>
             </div>
           )
         })}
