@@ -13,7 +13,7 @@ export default function Header() {
             {navData.map((icon, index)=>{
               return (
                 // <div className="h-[2.7rem] w-[2.7rem] border border-primary shadow-inner inset p-2 rounded-full grid place-items-center">
-                  <Link href={icon.link} >
+                  <Link href={icon.link} key={index}>
                 {icon.icon}
                 </Link>
                 // </div>
