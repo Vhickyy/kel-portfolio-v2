@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useState } from 'react';
-import { navData } from '@/fakedata/nav';
+import { navData } from '../../fakedata/nav';
 import { BsFillMoonFill, BsFillSunFill } from 'react-icons/bs';
 import Link from 'next/link';
 import ThemeButton from './ThemeButton';

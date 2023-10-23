@@ -1,20 +1,31 @@
 "use client"
 import React from 'react'
 import {FaFacebook, FaHome, FaYoutube, FaInstagram} from 'react-icons/fa';
-import {AiOutlineYoutube} from "react-icons/ai"
+import { navData } from '../../fakedata/nav';
 import {BsFillPersonFill, BsFillLaptopFill} from "react-icons/bs"
 import {motion} from "framer-motion";
+import Link from 'next/link';
 export default function Header() {
   return (
     <header className='w-[95%] md:w-[95%] lg:w-[90%] mx-auto relative z-10 '>
         <div className='h-[17rem] w-[10rem] sm:w-[17rem] bg-blur absolute top-[15%] right-0 -z-10 blur-[7rem] rounded-full'></div>
         <nav className='w-full h-10 fixed left-0 top-4'>
-            <div className='w-[80%] sm:w-[25rem] mx-auto  bg-primary rounded-full py-2 px-[1rem] flex items-center justify-between'> 
-                <FaHome className="h-[2rem] w-[2rem]"/>
-                <BsFillPersonFill className="h-[2rem] w-[2rem]"/>
-                <BsFillLaptopFill className="h-[2rem] w-[2rem]"/>
-                <FaYoutube className="h-[2rem] w-[2rem]"/>
-                <FaHome className="h-[2rem] w-[2rem]"/>
+            <div className='w-[80%] sm:w-[25rem] mx-auto  bg-bgColor backdrop-blur-lg rounded-full py-2 px-[1.3rem] flex items-center justify-between shadow-lg'> 
+            {navData.map((icon, index)=>{
+              return (
+                // <div className="h-[2.7rem] w-[2.7rem] border border-primary shadow-inner inset p-2 rounded-full grid place-items-center">
+                  <Link href={icon.link} >
+                {icon.icon}
+                </Link>
+                // </div>
+                // <FaHome className="h-[2.5rem] w-[2.5rem] border border-primary shadow-inner inset p-2 rounded-full"/>
+              )
+            })}
+                {/* <FaHome className="h-[2.5rem] w-[2.5rem] border border-primary shadow-inner inset p-2 rounded-full"/>
+                <BsFillPersonFill className="h-[2.5rem] w-[2.5rem] border border-primary shadow-inner inset p-2 rounded-full"/>
+                <BsFillLaptopFill clazssName="h-[2.5rem] w-[2.5rem] border border-primary shadow-inner inset p-2 rounded-full"/>
+                <FaYoutube className="h-[2.5rem] w-[2.5rem] border border-primary shadow-inner inset p-2 rounded-full"/>
+                <FaHome className="h-[2.5rem] w-[2.5rem] border border-primary shadow-inner inset p-2 rounded-full"/> */}
             </div>
         </nav>
         <motion.div className="pt-[10rem] md:pt-[4rem]"
