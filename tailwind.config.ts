@@ -19,7 +19,8 @@ const config: Config = {
         bgColor: "var(--bgColor)",
         blur: "var(--blur)",
         inverse: "var(--inverse)",
-        bgGray: "var(--bgGray)"
+        bgGray: "var(--bgGray)",
+        navBlur: "var(--navBlur)"
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
