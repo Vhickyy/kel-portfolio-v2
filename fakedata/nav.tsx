@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 // import type { IconType } from 'react-icons';
-import {FaFacebook, FaHome, FaYoutube, FaInstagram} from 'react-icons/fa';
+import {FaFacebook, FaYoutube} from 'react-icons/fa';
 import {BsFillPersonFill, BsFillLaptopFill} from "react-icons/bs"
 type nav = {
     name: string;

@@ -1,8 +1,7 @@
 "use client"
 import React from 'react'
-import {FaFacebook, FaHome, FaYoutube, FaInstagram} from 'react-icons/fa';
+import {FaFacebook,FaYoutube, FaInstagram} from 'react-icons/fa';
 import { navData } from '../../fakedata/nav';
-import {BsFillPersonFill, BsFillLaptopFill} from "react-icons/bs"
 import {motion} from "framer-motion";
 import Link from 'next/link';
 export default function Header() {
