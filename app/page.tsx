@@ -11,20 +11,17 @@ import ThemeButton from './components/ThemeButton'
 // import { ThemeContextProvider } from './context/ThemeContext'
 
 export default function Home() {
-  
 
   return (
     // <ThemeContextProvider>
     <div className='w-[90%] lg:flex max-w-[1120px] mx-auto'>
-      <aside className='hidden lg:block lg:w-[5%] '>
-        <div className='sticky top-[25%] grid gap-4 items-end justify-center text-textColor'>
+      <aside className='hidden lg:block lg:w-[5%]'>
+          <div className='sticky top-[25%] grid gap-4 items-end justify-center text-textColor'>
           <FaFacebook className="w-[2rem] h-[2rem]"/>
           <FaFacebook className="w-[2rem] h-[2rem]"/>
           <FaFacebook className="w-[2rem] h-[2rem]"/>
-          <div className=''>
-            <div className='w-[1px] h-[20rem] mx-auto bg-primary'></div>
+          <div className='w-[1px] h-[20rem] mx-auto bg-primary'></div>
           </div>
-        </div>
       </aside>
       <div className='lg:w-[95%]'>
         <DesktopNav/>
