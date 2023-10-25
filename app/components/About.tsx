@@ -13,9 +13,9 @@ function About() {
       {/* </div> */}
       <div className='mt-6 flex gap-4 flex-col sm:flex-row-reverse sm:items-center sm:justify-between'>
         <motion.div className='relative w-full h-[20rem] bg-primary sm:w-[35%] rounded-lg overflow-x-hidden'
-        initial={{x:-100}}
-        whileInView={{x:0}}
-        transition={{duration:0.5}}
+        // initial={{x:-100}}
+        // whileInView={{x:0}}
+        // transition={{duration:0.5}}
         >
           <Image
           alt="About image"
@@ -28,7 +28,7 @@ function About() {
         </motion.div>
         <motion.div className='sm:w-[60%]'
         initial={{y:100}}
-        whileInView={{x:0}}
+        whileInView={{y:0}}
         transition={{duration:0.5}}
         >
           <p className='text-textgray leading-loose tracking-wider pt-4'>

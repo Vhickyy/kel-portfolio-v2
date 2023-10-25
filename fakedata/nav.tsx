@@ -12,17 +12,17 @@ export const navData:nav[] = [
     {
         name:"home",
         link: "#home",
-        icon: <FaHome className="h-[1.7rem] w-[1.7rem] sm:h-[2.5rem] sm:w-[2.5rem] text-primary"/>
+        icon: <FaHome className="h-[1.9rem] w-[1.9rem] sm:h-[2.5rem] sm:w-[2.5rem] text-primary"/>
     },
     {
         name:"about",
         link: "#about",
-        icon: <BsFillPersonFill className="h-[1.7rem] w-[1.7rem] sm:h-[2.5rem] sm:w-[2.5rem] text-primary"/>
+        icon: <BsFillPersonFill className="h-[1.9rem] w-[1.9rem] sm:h-[2.5rem] sm:w-[2.5rem] text-primary"/>
     },
     {
         name:"skill",
         link: "#skill" ,
-        icon: <BsFillLaptopFill className="h-[1.7rem] w-[1.7rem] sm:h-[2.5rem] sm:w-[2.5rem] text-primary"/>
+        icon: <BsFillLaptopFill className="h-[1.9rem] w-[1.9rem] sm:h-[2.5rem] sm:w-[2.5rem] text-primary"/>
     },
     // {
     //     name:"projects",
@@ -32,11 +32,11 @@ export const navData:nav[] = [
     {
         name:"videos",
         link: "#videos",
-        icon: <FaYoutube className="h-[1.7rem] w-[1.7rem] sm:h-[2.5rem] sm:w-[2.5rem] text-primary"/>
+        icon: <FaYoutube className="h-[1.9rem] w-[1.9rem] sm:h-[2.5rem] sm:w-[2.5rem] text-primary"/>
     },
     {
         name:"reviews",
         link: "#reviews",
-        icon: <BsFillLaptopFill className="h-[1.7rem] w-[1.7rem] sm:h-[2.5rem] sm:w-[2.5rem] text-primary"/>
+        icon: <BsFillLaptopFill className="h-[1.9rem] w-[1.9rem] sm:h-[2.5rem] sm:w-[2.5rem] text-primary"/>
     },
 ]
