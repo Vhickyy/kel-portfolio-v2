@@ -12,10 +12,10 @@ export default function Header() {
             <div className='w-[80%] sm:w-[25rem] mx-auto bg-navBlur backdrop-blur rounded-full py-2 px-[1.3rem] flex items-center justify-between shadow-lg'> 
             {navData.map((icon, index)=>{
               return (
-                <div className="border border-primary shadow-inner inset p-1 rounded-full grid place-items-center text-textColor">
-                  <Link href={icon.link} key={index}>
-                    {/* {icon.icon} */}
-                    <FaYoutube className="h-[2.6rem] w-[2.6rem]"/>
+                <div className="border border-primary shadow-inner inset p-1 rounded-full grid place-items-center text-textColor" key={index}>
+                  <Link href={icon.link} >
+                    {icon.icon}
+                    {/* <FaYoutube className="h-[2.5rem] w-[2.5rem]"/> */}
                   </Link>
                 </div>
                 // <Link href={icon.link} key={index}>

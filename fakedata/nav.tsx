@@ -12,17 +12,17 @@ export const navData:nav[] = [
     {
         name:"home",
         link: "#home",
-        icon: <FaHome className="h-[2.6rem] w-[2.6rem]"/>
+        icon: <FaHome className="h-[2.5rem] w-[2.5rem]"/>
     },
     {
         name:"about",
         link: "#about",
-        icon: <BsFillPersonFill className="h-[2.6rem] w-[2.6rem]"/>
+        icon: <BsFillPersonFill className="h-[2.5rem] w-[2.5rem]"/>
     },
     {
         name:"skill",
         link: "#skill" ,
-        icon: <BsFillLaptopFill className="h-[2.6rem] w-[2.6rem]"/>
+        icon: <BsFillLaptopFill className="h-[2.5rem] w-[2.6rem]"/>
     },
     // {
     //     name:"projects",
@@ -32,11 +32,11 @@ export const navData:nav[] = [
     {
         name:"videos",
         link: "#videos",
-        icon: <FaYoutube className="h-[2.6rem] w-[2.6rem]"/>
+        icon: <FaYoutube className="h-[2.5rem] w-[2.5rem]"/>
     },
     {
         name:"reviews",
         link: "#reviews",
-        icon: <BsFillLaptopFill className="h-[2.6rem] w-[2.6rem]"/>
+        icon: <BsFillLaptopFill className="h-[2.5rem] w-[2.5rem]"/>
     },
 ]
