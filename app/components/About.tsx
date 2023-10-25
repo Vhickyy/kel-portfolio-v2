@@ -13,9 +13,9 @@ function About() {
       {/* </div> */}
       <div className='mt-6 flex gap-4 flex-col sm:flex-row-reverse sm:items-center sm:justify-between'>
         <motion.div className='relative w-full h-[20rem] bg-primary sm:w-[35%] rounded-lg overflow-x-hidden'
-        initial={{y:100}}
-        whileInView={{y:0}}
-        transition={{duration:1}}
+        initial={{x:-100}}
+        whileInView={{x:0}}
+        transition={{duration:0.5}}
         >
           <Image
           alt="About image"
@@ -27,9 +27,9 @@ function About() {
           />
         </motion.div>
         <motion.div className='sm:w-[60%]'
-        initial={{x:-100}}
+        initial={{y:100}}
         whileInView={{x:0}}
-        transition={{duration:1}}
+        transition={{duration:0.5}}
         >
           <p className='text-textgray leading-loose tracking-wider pt-4'>
           I am a Business Management graduate, a Business Assistant and a <span className="text-primary font-bold ">Canva Expert</span> with more than 3years experience. I am also a <span className="text-primary font-bold">Canvassador</span>. I take my client's work very seriously and always deliver on time.
