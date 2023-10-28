@@ -14,7 +14,7 @@ export default function Reviews() {
   const {ref,inView} = useInView({threshold:0.5,});
   useEffect(()=>{
     if(inView){
-      changeActive("videos")
+      changeActive("reviews")
     }
   },[inView])
   return (
