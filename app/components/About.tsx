@@ -6,7 +6,7 @@ import {motion} from "framer-motion";
 
 function About() {
   return (
-    <section className='pt-[8rem]'>
+    <section className='pt-[8rem]' id="about">
       {/* <div className='flex items-center justify-center'> */}
         {/* <h2 className='font-extrabold text-3xl text-primary'> 01.</h2> */}
         <h2 className='font-extrabold text-2xl sm:text-3xl text-textColor text-center'>About Me</h2>
@@ -27,9 +27,9 @@ function About() {
           />
         </motion.div>
         <motion.div className='sm:w-[60%]'
-        initial={{y:100}}
-        whileInView={{y:0}}
-        transition={{duration:0.5}}
+        initial={{x:-200}}
+        whileInView={{x:0}}
+        transition={{duration:1}}
         >
           <p className='text-textgray leading-loose tracking-wider pt-4'>
           I am a Business Management graduate, a Business Assistant and a <span className="text-primary font-bold ">Canva Expert</span> with more than 3years experience. I am also a <span className="text-primary font-bold">Canvassador</span>. I take my client's work very seriously and always deliver on time.

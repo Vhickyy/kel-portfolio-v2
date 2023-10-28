@@ -39,7 +39,7 @@ export default function Videos({mode}:Video) {
     },
   ]
   return (
-    <section className={`w-full ${mode ? "py-[2rem]" : "pt-[8rem]"}`}>
+    <section className={`w-full ${mode ? "py-[2rem]" : "pt-[8rem]"}`} id="video">
         <h2 className='font-extrabold text-2xl sm:text-3xl text-textColor text-center'>Videos</h2>
       <div className=' grid gap-x-4 gap-y-8 mt-8 sm:grid-cols-2 xl:grid-cols-3'>
         {videos.map((video,index)=>{

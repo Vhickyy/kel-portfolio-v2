@@ -9,7 +9,7 @@ import 'swiper/css/autoplay';
 
 export default function Reviews() {
   return (
-    <section className='pt-[8rem]'>
+    <section className='pt-[8rem]' id="review">
       <div className='flex items-center gap-4'>
         <h2 className='font-extrabold text-3xl text-primary'> 04.</h2>
         <h2 className='font-extrabold text-3xl text-accent'>See what clients have to say</h2>

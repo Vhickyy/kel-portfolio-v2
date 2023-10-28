@@ -4,7 +4,11 @@ import {FaFacebook,FaYoutube, FaInstagram} from 'react-icons/fa';
 import { navData } from '../../fakedata/nav';
 import {motion} from "framer-motion";
 import Link from 'next/link';
+import useNavContext from "../context/NavContext";
+// import {useInView} from "react-intersection-observer;"
 export default function Header() {
+  const {active,changeActive} = useNavContext();
+  // const {ref,inView} = useInView()
   return (
     <header className='w-[95%] md:w-[95%] lg:w-[90%] mx-auto relative z-10 '>
         <div className='h-[17rem] w-[10rem] sm:w-[17rem] bg-blur absolute top-[15%] right-0 -z-10 blur-[7rem] rounded-full'></div>
@@ -12,23 +16,17 @@ export default function Header() {
             <div className='w-[80%] sm:w-[25rem] mx-auto bg-navBlur backdrop-blur rounded-full py-2 px-[1.3rem] flex items-center justify-between shadow-lg'> 
             {navData.map((icon, index)=>{
               return (
-                <div className="border border-primary shadow-inner inset p-2 rounded-full grid place-items-center text-textColor" key={index}>
+                <div className={`shadow-inner inset p-2 rounded-full grid place-items-center text-textColor ${icon.name === active ? "border border-primary" : null}` } key={index} onClick={()=>changeActive(icon.name)}>
                   <Link href={icon.link} >
                     {icon.icon}
                     {/* <FaYoutube className="h-[2.5rem] w-[2.5rem]"/> */}
                   </Link>
                 </div>
-                // <Link href={icon.link} key={index}>
-                // {icon.icon}
-                //  </Link>
-                // <Link href={icon.link} key={index}>
-                  // {icon.icon}
-                // </Link>
               )
             })} 
             </div>
         </nav>
-        <motion.div className="pt-[10rem] md:pt-[4rem]"
+        <motion.div className="pt-[10rem] md:pt-[4rem]" id="home"
         initial={{opacity:0.5, x:-200}}
         whileInView={{opacity:1,x:0}}
         transition={{duration:1}}

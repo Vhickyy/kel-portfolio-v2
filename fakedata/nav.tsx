@@ -20,7 +20,7 @@ export const navData:nav[] = [
         icon: <BsFillPersonFill className="h-[1.9rem] w-[1.9rem] sm:h-[2.5rem] sm:w-[2.5rem] text-primary"/>
     },
     {
-        name:"skill",
+        name:"skills",
         link: "#skill" ,
         icon: <BsFillLaptopFill className="h-[1.9rem] w-[1.9rem] sm:h-[2.5rem] sm:w-[2.5rem] text-primary"/>
     },
@@ -31,12 +31,12 @@ export const navData:nav[] = [
     // },
     {
         name:"videos",
-        link: "#videos",
+        link: "#video",
         icon: <FaYoutube className="h-[1.9rem] w-[1.9rem] sm:h-[2.5rem] sm:w-[2.5rem] text-primary"/>
     },
     {
         name:"reviews",
-        link: "#reviews",
+        link: "#review",
         icon: <BsFillLaptopFill className="h-[1.9rem] w-[1.9rem] sm:h-[2.5rem] sm:w-[2.5rem] text-primary"/>
     },
 ]
