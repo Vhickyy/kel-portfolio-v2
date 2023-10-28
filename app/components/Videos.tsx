@@ -1,7 +1,10 @@
-import React from 'react'
+"use client"
+import React, { useEffect } from 'react'
 import youTube from "@/assets/youTube1.jpg";
 import Image from 'next/image';
 import {FaEdit, FaTrash} from "react-icons/fa";
+import useNavContext from '../context/NavContext';
+import { useInView } from 'react-intersection-observer';
 interface Video {
   mode?: boolean
 }
@@ -11,8 +14,7 @@ type Videos = {
     image: string;
     link: string;
 }
-export default function Videos({mode}:Video) {
-  const videos: Videos[] = [
+const videos: Videos[] = [
     {
       name: "canva",
       descrition: "about canva design",
@@ -38,8 +40,17 @@ export default function Videos({mode}:Video) {
       link:"link url"
     },
   ]
+export default function Videos({mode}:Video) {
+  const {changeActive} = useNavContext();
+  const {ref,inView} = useInView({threshold:0.5,});
+  useEffect(()=>{
+    if(inView){
+      changeActive("videos")
+    }
+  },[inView])
+  
   return (
-    <section className={`w-full ${mode ? "py-[2rem]" : "pt-[8rem]"}`} id="video">
+    <section className={`w-full ${mode ? "py-[2rem]" : "pt-[8rem]"}`} id="video" ref={ref}>
         <h2 className='font-extrabold text-2xl sm:text-3xl text-textColor text-center'>Videos</h2>
       <div className=' grid gap-x-4 gap-y-8 mt-8 sm:grid-cols-2 xl:grid-cols-3'>
         {videos.map((video,index)=>{

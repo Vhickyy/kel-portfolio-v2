@@ -1,15 +1,24 @@
 "use client"
-import React from 'react';
+import React, { useEffect } from 'react';
 import reviews from '@/fakedata/reviews';
 import { Pagination,Autoplay } from 'swiper';
 import { Swiper, SwiperSlide,  } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
+import useNavContext from '../context/NavContext';
+import { useInView } from 'react-intersection-observer';
 
 export default function Reviews() {
+  const {changeActive} = useNavContext();
+  const {ref,inView} = useInView({threshold:0.5,});
+  useEffect(()=>{
+    if(inView){
+      changeActive("videos")
+    }
+  },[inView])
   return (
-    <section className='pt-[8rem]' id="review">
+    <section className='pt-[8rem]' id="review" ref={ref}>
       <div className='flex items-center gap-4'>
         <h2 className='font-extrabold text-3xl text-primary'> 04.</h2>
         <h2 className='font-extrabold text-3xl text-accent'>See what clients have to say</h2>

@@ -32,6 +32,9 @@
   --navBlur: #10091880;
   
 }
+html{
+  scroll-behavior: smooth;
+}
 body{
   background-color: var(--bgColor);
 }
