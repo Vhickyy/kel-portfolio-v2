@@ -1,12 +1,21 @@
 "use client"
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect } from 'react'
 import Img from "../../assets/aboutImg3.png";
 import {motion} from "framer-motion";
+import {useInView} from "react-intersection-observer";
+import useNavContext from '../context/NavContext';
 
 function About() {
+  const {changeActive} = useNavContext();
+  const {ref,inView} = useInView();
+  useEffect(()=>{
+    if(inView){
+      changeActive("about")
+    }
+  },[inView])
   return (
-    <section className='pt-[10rem]' id="about">
+    <section className='pt-[10rem]' id="about" ref={ref}>
       {/* <div className='flex items-center justify-center'> */}
         {/* <h2 className='font-extrabold text-3xl text-primary'> 01.</h2> */}
         <h2 className='font-extrabold text-2xl sm:text-3xl text-textColor text-center'>About Me</h2>
