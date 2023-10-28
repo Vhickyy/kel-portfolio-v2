@@ -12,8 +12,8 @@ function DesktopNav() {
       <div className='p-4 bg-primary rounded-full text-accent'>KO</div>
       {navData.map((nav,index)=>{
         return (
-          <div key={index} onClick={()=>changeActive(nav.name)}>
-            <Link href={nav.link} className='capitalize'>{nav.name}</Link>
+          <div key={index}>
+            <Link href={nav.link} className='capitalize' onClick={()=>changeActive(nav.name)}>{nav.name}</Link>
             {active === nav.name ? <div className='h-1 w-full bg-primary rounded'></div> : null}
           </div>
         )

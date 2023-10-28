@@ -6,7 +6,7 @@ import {motion} from "framer-motion";
 
 function About() {
   return (
-    <section className='pt-[8rem]' id="about">
+    <section className='pt-[10rem]' id="about">
       {/* <div className='flex items-center justify-center'> */}
         {/* <h2 className='font-extrabold text-3xl text-primary'> 01.</h2> */}
         <h2 className='font-extrabold text-2xl sm:text-3xl text-textColor text-center'>About Me</h2>
