@@ -42,7 +42,7 @@ const videos: Videos[] = [
   ]
 export default function Videos({mode}:Video) {
   const {changeActive} = useNavContext();
-  const {ref,inView} = useInView({threshold:0.2,});
+  const {ref,inView} = useInView({threshold:0.4});
   useEffect(()=>{
     if(inView){
       changeActive("videos")
@@ -50,7 +50,7 @@ export default function Videos({mode}:Video) {
   },[inView])
   
   return (
-    <section className={`w-full ${mode ? "py-[2rem]" : "pt-[8rem]"}`} id="video" ref={ref}>
+    <section className={`w-full ${mode ? "py-[2rem]" : "pt-[3rem] pb-[4rem]"}`} id="video" ref={ref}>
         <h2 className='font-extrabold text-2xl sm:text-3xl text-textColor text-center'>Videos</h2>
       <div className=' grid gap-x-4 gap-y-8 mt-8 sm:grid-cols-2 xl:grid-cols-3'>
         {videos.map((video,index)=>{

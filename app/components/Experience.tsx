@@ -30,9 +30,10 @@ const experience = [
     year: "2020-2021"
   },
 ]
+// pt-[3rem] pb-[4rem]
 function Experience({mode}:exper) {
   return (
-    <section className={mode ? 'py-[2rem]' : 'pt-[8rem]'}>
+    <section className={mode ? 'py-[2rem]' : 'pt-[8rem] pb-[4rem]'}>
         <h2 className='font-extrabold text-2xl sm:text-3xl text-textColor text-center'>Experience</h2>
       <div className='text-textgray flex flex-col sm:flex-row flex-wrap justify-between gap-y-6 mt-12'>
         {experience.map((exp,index)=>{

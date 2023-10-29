@@ -13,7 +13,7 @@ function DesktopNav() {
       {navData.map((nav,index)=>{
         return (
           <div key={index}>
-            <Link href={nav.link} className='capitalize' onClick={()=>changeActive(nav.name)}>{nav.name}</Link>
+            <Link href={nav.link} className='capitalize' onClick={(e)=>changeActive(nav.name,e,true)}>{nav.name}</Link>
             {active === nav.name ? <div className='h-1 w-full bg-primary rounded'></div> : null}
           </div>
         )

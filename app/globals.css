@@ -2,14 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
-}
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 :root{
   /* --yellow: #fee302; */
@@ -37,10 +35,10 @@ html {
   
 }
 
-body{
-  background-color: var(--bgColor);
+/* body{
+  background-color: var(--bgColor); */
   /* scroll-behavior: smooth; */
-}
+/* } */
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

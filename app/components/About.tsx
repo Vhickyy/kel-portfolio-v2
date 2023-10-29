@@ -8,14 +8,14 @@ import useNavContext from '../context/NavContext';
 
 function About() {
   const {changeActive} = useNavContext();
-  const {ref,inView} = useInView({threshold: 0.4});
+  const {ref,inView} = useInView({threshold:0.6});
   useEffect(()=>{
     if(inView){
       changeActive("about")
     }
   },[inView])
   return (
-    <section className='pt-[3rem]' id="about" ref={ref}>
+    <section className='pt-[3rem] pb-[5rem]' id="about" ref={ref}>
       {/* <div className='flex items-center justify-center'> */}
         {/* <h2 className='font-extrabold text-3xl text-primary'> 01.</h2> */}
         <h2 className='font-extrabold text-2xl sm:text-3xl text-textColor text-center'>About Me</h2>
@@ -36,8 +36,8 @@ function About() {
           />
         </motion.div>
         <motion.div className='sm:w-[60%]'
-        initial={{x:-200}}
-        whileInView={{x:0}}
+        initial={{opacity:0,x:-100}}
+        whileInView={{opacity:1,x:0}}
         transition={{duration:1}}
         >
           <p className='text-textgray leading-loose tracking-wider pt-4'>

@@ -18,8 +18,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="!scroll-smooth">
-      <body className={`${inter.className} overflow-x-hidden`}>
+    <html lang="en" className="">
+      <body className={`${inter.className} overflow-x-hidden bg-bgColor`}>
         <ThemeContextProvider>
           <NavContextProvider>
             {children}
