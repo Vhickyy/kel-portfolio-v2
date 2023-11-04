@@ -42,7 +42,7 @@ const videos: Videos[] = [
   ]
 export default function Videos({mode}:Video) {
   const {changeActive} = useNavContext();
-  const {ref,inView} = useInView({threshold:0.4});
+  const {ref,inView} = useInView({threshold:0.2});
   useEffect(()=>{
     if(inView){
       changeActive("videos")

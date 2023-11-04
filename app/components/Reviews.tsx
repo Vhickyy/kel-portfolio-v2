@@ -11,7 +11,7 @@ import { useInView } from 'react-intersection-observer';
 
 export default function Reviews() {
   const {changeActive} = useNavContext();
-  const {ref,inView} = useInView({threshold:0.3});
+  const {ref,inView} = useInView({threshold:0.4});
   useEffect(()=>{
     if(inView){
       changeActive("reviews")
