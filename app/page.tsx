@@ -5,6 +5,7 @@ import Experience from '@/app/components/Experience'
 import Header from '@/app/components/Header'
 import Reviews from '@/app/components/Reviews'
 import Skills from '@/app/components/Skills'
+import Project from '@/app/components/Project'
 import Videos from '@/app/components/Videos'
 import { FaFacebook, FaSun } from 'react-icons/fa';
 import ThemeButton from './components/ThemeButton'
@@ -30,6 +31,7 @@ export default function Home() {
          <About/>
          <Skills/>
          <Experience/>
+         <Project/>
          <Videos/>
          <Reviews/>
          <Contact/>

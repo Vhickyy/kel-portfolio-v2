@@ -5,7 +5,7 @@ import { FaHamburger } from 'react-icons/fa'
 
 function Navbar() {
   return (
-    <nav className='text-textgray py-6 sticky top-0'>
+    <nav className='text-textgray py-6 sticky top-0 bg-bgColor shadow-lg'>
         <div className='flex justify-between items-center'>
             <Link href={"/"} className='p-4 bg-primary rounded-full text-accent'>KO</Link>
             <div className='border-2 border-primary p-3 rounded-md text-primary cursor-pointer md:hidden'>
