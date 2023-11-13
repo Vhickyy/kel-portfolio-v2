@@ -5,6 +5,7 @@ import Skills from "@/app/components/Skills"
 function skills() {
   return (
     <div className='text-white'>
+      {}
     <Skills mode/>
     </div>
   )

@@ -24,7 +24,7 @@ const reviews = [
 ]
 function review() {
   return (
-    <div className='text-inverse pt-6 pb-10'>
+    <div className='text-gray-500 pt-6 pb-10'>
       <div className='text-inverse flex gap-3 cursor-pointer'>
         <h1>Reviewers</h1>
         <h1>Reviews</h1>
@@ -32,7 +32,7 @@ function review() {
       <div className='grid gap-4 md:grid-cols-2 xl:grid-cols-3'>
         {reviews.map((review,index)=>{
           return (
-            <div key={index} className='bg-slate-900 text-center py-6 px-4 grid gap-4 rounded-lg'>
+            <div key={index} className='bg-bgGray text-center py-6 px-4 grid gap-4 rounded-lg'>
               <div className=''>
                 <h5>{review.name}</h5>
                 <p>{review.position}</p>

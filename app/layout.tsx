@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import { ThemeContextProvider } from './context/ThemeContext'
 import { NavContextProvider } from './context/NavContext'
 import Link from 'next/link'
+import SessionProvider from '@/app/context/sessionProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,7 +23,9 @@ export default function RootLayout({
       <body className={`${inter.className} overflow-x-hidden bg-bgColor`}>
         <ThemeContextProvider>
           <NavContextProvider>
-            {children}
+            <SessionProvider>
+             {children}
+            </SessionProvider>
           </NavContextProvider>
         </ThemeContextProvider>
       </body>

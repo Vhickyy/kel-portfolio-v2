@@ -23,7 +23,6 @@ export const ThemeContextProvider = ({children}: ChildrenProp) => {
     }
     useEffect(()=>{
         getTheme()
-        console.log(theme);
     },[])
     return (
         <ThemeContext.Provider value={{theme, toggleTheme}}>
