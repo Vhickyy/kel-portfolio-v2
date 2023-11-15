@@ -15,7 +15,6 @@ export const NavContextProvider = ({children}: {children: ReactNode}) => {
         e?.preventDefault();
         // setShouldClick(false)/
         setActive(active)
-        // console.log(e.currentTarget.getAttribute("href"))
         if(e){
             const href = e?.currentTarget.getAttribute("href")!;
             const target:HTMLDivElement = document.querySelector(href)!;
