@@ -14,7 +14,7 @@
   --yellow: #e2b808;
   /* --lightbg: #fffbd9; */
   --bgColor: #f5f5f5;
-  --bgColorDim: #f5f5f550;
+  --bgColorDim: #f5f5f540;
   --inverse: #100918;
   /* --textColor: #100918;  */
   --textColor: #27272a;
@@ -27,14 +27,13 @@
 }
 .dark{
   --bgColor: #100918;
-  --bgColorDim: #10091850;
+  --bgColorDim: #10091830;
   --inverse: whitesmoke;
   --textColor: #ffffff;
   --yellow: #fee302;
   --blur: #fee30290;
   --bgGray: #0f172a;
   --navBlur: #10091880;
-  
 }
 
 /* body{

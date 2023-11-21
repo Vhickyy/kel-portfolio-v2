@@ -6,8 +6,8 @@ import Fixed from '../components/Fixed'
 function skills() {
   return (
     <div className='text-white'>
-    <Fixed/>
-    <Skills mode/>
+      <Fixed page="Skill" />
+      <Skills mode />
     </div>
   )
 }
