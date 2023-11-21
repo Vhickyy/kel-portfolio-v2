@@ -20,7 +20,8 @@ const config: Config = {
         blur: "var(--blur)",
         inverse: "var(--inverse)",
         bgGray: "var(--bgGray)",
-        navBlur: "var(--navBlur)"
+        navBlur: "var(--navBlur)",
+        bgColorDim: "var(--bgColorDim)"
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

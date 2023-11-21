@@ -5,7 +5,6 @@ import User from "@/models/User";
 import connect from "@/utils/db";
 import bcrypt from "bcrypt";
 import { NextResponse } from "next/server";
-import { JWT } from "next-auth/jwt";
 
 const options:NextAuthOptions = {
   providers: [
@@ -32,35 +31,35 @@ const options:NextAuthOptions = {
             }
         }
     }),
-    GoogleProvider({
-      clientId: process.env.GOOGLE_ID!,
-      clientSecret: process.env.GOOGLE_SECRET!,
-    })
+    // GoogleProvider({
+    //   clientId: process.env.GOOGLE_ID!,
+    //   clientSecret: process.env.GOOGLE_SECRET!,
+    // })
   ],
-  callbacks:{
-    async signIn({user, account }: {user: AuthUser, account:Account | null }) : Promise<boolean | string> {
-        if(account?.provider == "credentials"){
-            return true
-        }
-        if(account?.provider == "google"){
-            await connect();
-            try{
-                const userExist = await User.findOne({email:user.email});
-                if(!userExist){
-                    await User.create({email:user.email})
-                }
-                return true;
-            }catch(err){
+//   callbacks:{
+//     async signIn({user, account }: {user: AuthUser, account:Account | null }) : Promise<boolean | string> {
+//         if(account?.provider == "credentials"){
+//             return true
+//         }
+//         if(account?.provider == "google"){
+//             await connect();
+//             try{
+//                 const userExist = await User.findOne({email:user.email});
+//                 if(!userExist){
+//                     await User.create({email:user.email})
+//                 }
+//                 return true;
+//             }catch(err){
 
-            }
-        }
-        return false;
-    },
+//             }
+//         }
+//         return false;
+//     },
     // async jwt ({token,user,account}:{token:JWT,user:AuthUser,account:Account}): Promise<boolean | string>{
     //   return false
     // }
   }
-}
+// }
 
 const handler = NextAuth(options);
 
