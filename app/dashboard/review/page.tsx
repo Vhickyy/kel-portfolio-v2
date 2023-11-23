@@ -22,7 +22,7 @@ const reviews = [
     review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur excepturi maiores ipsum? Voluptas tenetur error est cupiditate consectetur corrupti, perferendis enim quaerat tempore ab ea necessitatibus earum labore fugit iste hic, deleniti natus porro fuga doloremque. Sit nemo beatae pariatur"
   },
 ]
-function review() {
+function Review() {
   return (
     <div className='text-gray-500 pt-6 pb-10'>
       <div className='text-inverse flex gap-3 cursor-pointer'>
@@ -50,4 +50,4 @@ function review() {
   )
 }
 
-export default review
+export default Review

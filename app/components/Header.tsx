@@ -14,7 +14,7 @@ export default function Header() {
     if(inView){
       changeActive("home")
     }
-  },[inView])
+  },[inView,active])
   return (
     <header className='w-[95%] pb-[5rem] md:w-[95%] lg:w-[90%] mx-auto relative z-10' id="home" ref={ref}>
         <div className='h-[17rem] w-[10rem] sm:w-[17rem] bg-blur absolute top-[15%] right-0 -z-10 blur-[7rem] rounded-full'></div>

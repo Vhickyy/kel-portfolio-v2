@@ -1,7 +1,7 @@
 import React from 'react'
 import Videos from "@/app/components/Videos"
 
-function page() {
+function Video() {
   return (
     <div className='text-white'>
     <Videos mode/>
@@ -9,4 +9,4 @@ function page() {
   )
 }
 
-export default page
+export default Video

@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import Skills from "@/app/components/Skills"
 import Fixed from '../components/Fixed'
 
-function skills() {
+function Skill() {
   const [open,setOpen] = useState(false);
   const openForm = () => {
     setOpen(true)
@@ -15,10 +15,10 @@ function skills() {
   return (
     <div className='text-white'>
       {open ? <Fixed page="Skill" closeForm={closeForm}/> : null}
-      <button className="bg-primary px-4 py-2 text-bgColor" onClick={openForm}>Add Skill</button>
+      <button className="bg-primary px-4 py-2 text-accent rounded-md" onClick={openForm}>Add Skill</button>
       <Skills mode />
     </div>
   )
 }
 
-export default skills
+export default Skill

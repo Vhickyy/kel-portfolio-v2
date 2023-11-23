@@ -37,7 +37,7 @@ export default function Home() {
          <Contact/>
         </main>
       </div>
-      <div className='fixed bottom-8 right-10 md:hidden border-2 border-primary p-3 rounded-[50%] text-primary cursor-pointer'>
+      <div className='fixed bottom-8 right-10 md:hidden border-2 border-primary p-3 rounded-[50%] text-primary cursor-pointer z-[1000] bg-[#10091899]'>
         <ThemeButton/>
       </div>
     </div>

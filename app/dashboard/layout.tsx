@@ -10,7 +10,7 @@ export default function RootLayout({
     <div className='w-[90%] max-w-[1120px] mx-auto'>
       <Navbar />
       {children}
-      <div className='fixed bottom-8 right-10 md:hidden border-2 border-primary p-3 rounded-[50%] text-primary cursor-pointer'>
+      <div className='fixed bottom-8 right-10 md:hidden border-2 border-primary p-3 rounded-[50%] text-primary cursor-pointer bg-[#10091899]'>
         <ThemeButton/>
       </div>
     </div>

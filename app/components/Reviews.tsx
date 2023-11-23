@@ -10,13 +10,13 @@ import useNavContext from '../context/NavContext';
 import { useInView } from 'react-intersection-observer';
 
 export default function Reviews() {
-  const {changeActive} = useNavContext();
+  const {changeActive,active} = useNavContext();
   const {ref,inView} = useInView({threshold:0.4});
   useEffect(()=>{
     if(inView){
       changeActive("reviews")
     }
-  },[inView])
+  },[inView,active])
   return (
     <section className='pt-[3rem]' id="review" ref={ref}>
       <div className='flex items-center gap-4'>
@@ -51,7 +51,7 @@ export default function Reviews() {
           {reviews.map((review,index)=>{
             return(
               <SwiperSlide key={index}>
-                <div className='bg-white rounded-md p-4 shadow-lg h-[18rem] w-[90%] sm:w-[95%} md:w-full mx-auto'>
+                <div className='bg-[#392a4a] rounded-md p-4 shadow-lg h-[18rem] w-[90%] sm:w-[95%} md:w-full mx-auto text-white'>
                   <h5>{review.name}</h5>
                   <p>{review.title}</p>
                   <p>{review.review}</p>

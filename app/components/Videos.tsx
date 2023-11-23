@@ -41,13 +41,13 @@ const videos: Videos[] = [
     },
   ]
 export default function Videos({mode}:Video) {
-  const {changeActive} = useNavContext();
+  const {changeActive,active} = useNavContext();
   const {ref,inView} = useInView({threshold:0.2});
   useEffect(()=>{
     if(inView){
       changeActive("videos")
     }
-  },[inView])
+  },[inView,active])
   
   return (
     <section className={`w-full ${mode ? "py-[2rem]" : "pt-[3rem] pb-[4rem]"}`} id="video" ref={ref}>

@@ -7,13 +7,13 @@ import {useInView} from "react-intersection-observer";
 import useNavContext from '../context/NavContext';
 
 function About() {
-  const {changeActive} = useNavContext();
+  const {changeActive,active} = useNavContext();
   const {ref,inView} = useInView({threshold:0.6});
   useEffect(()=>{
     if(inView){
       changeActive("about")
     }
-  },[inView])
+  },[inView,active])
   return (
     <section className='pt-[3rem] pb-[5rem]' id="about" ref={ref}>
       {/* <div className='flex items-center justify-center'> */}
