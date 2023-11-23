@@ -10,13 +10,13 @@ import useNavContext from '../context/NavContext';
 import { useInView } from 'react-intersection-observer';
 
 export default function Reviews() {
-  const {changeActive,active} = useNavContext();
+  const {changeActive} = useNavContext();
   const {ref,inView} = useInView({threshold:0.4});
   useEffect(()=>{
     if(inView){
       changeActive("reviews")
     }
-  },[inView,active])
+  },[inView])
   return (
     <section className='pt-[3rem]' id="review" ref={ref}>
       <div className='flex items-center gap-4'>

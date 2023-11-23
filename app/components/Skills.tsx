@@ -57,13 +57,13 @@ const skillset: skill[] = [
   },
 ]
 function Skills({mode}:skills) {
-  const {changeActive,active} = useNavContext();
+  const {changeActive} = useNavContext();
   const {ref,inView} = useInView({threshold:0.4});
   useEffect(()=>{
     if(inView){
       changeActive("skills")
     }
-  },[inView,active])
+  },[inView])
   return (
     <section className={` ${mode ? 'pt-[2rem]' : 'pt-[3rem]'}`} id="skill" ref={ref}>
       <h2 className='font-extrabold text-2xl sm:text-3xl text-textColor text-center'>Area of Expertise</h2>
