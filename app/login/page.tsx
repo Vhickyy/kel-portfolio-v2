@@ -16,7 +16,7 @@ const Login = () => {
           <div className="w-full grid gap-4">
               <button className="boder bg-primary text-accent w-full py-2 rounded">Login</button>
           </div>
-          <p>Don't have an account? <Link href="/register">Register</Link></p>
+          <p>Don't have an account? <Link href="/register" className='text-primary cursor-pointer'>Register</Link></p>
       </form>
       <div className='fixed bottom-8 right-10  border-2 border-primary p-3 rounded-[50%] text-primary cursor-pointer'>
           <ThemeButton/>
