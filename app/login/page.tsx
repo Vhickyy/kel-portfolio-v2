@@ -14,7 +14,6 @@ const Login = () => {
           </div>
           <div className="w-full grid gap-4">
               <button className="boder bg-primary text-accent w-full py-2 rounded">Login</button>
-              <button className="border border-primary  text-primary w-full py-2 rounded">Sign in with Google</button>
           </div>
       </form>
       <div className='fixed bottom-8 right-10 md:hidden border-2 border-primary p-3 rounded-[50%] text-primary cursor-pointer'>

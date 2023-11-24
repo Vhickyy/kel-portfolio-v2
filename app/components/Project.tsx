@@ -21,7 +21,10 @@ const projects = [
     },
 ]
 
-function Project() {
+interface exper {
+  mode?: boolean
+}
+function Project(mode: exper) {
 //   const {changeActive} = useNavContext();
 //   const {ref,inView} = useInView({threshold:0.6});
 //   useEffect(()=>{
@@ -45,9 +48,9 @@ function Project() {
             )
         })}
       </div>
-      <div className="w-full flex justify-center items-center">
+      {!mode && <div className="w-full flex justify-center items-center">
         <button className='mx-auto mt-6 text-md sm:text-lg tracking-wide border-primary border-2 py-2 px-4 rounded-lg text-primary font-medium  hover:transform hover:scale-105 hover:duration-200 '>View More Videos</button>
-      </div>
+      </div>}
     </section>
   )
 }
