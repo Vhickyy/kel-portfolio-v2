@@ -2,6 +2,7 @@
 import React from 'react';
 import axios from "axios";
 import ThemeButton from '../components/ThemeButton';
+import Link from 'next/link';
 
 const Register = () => {
     const register = async (e:React.FormEvent<HTMLFormElement>) => {
@@ -24,7 +25,8 @@ const Register = () => {
     }
   return (
     <>
-    <form onSubmit={register} className="text-primary w-[90%] sm:w-[30rem] mx-auto flex flex-col items-center justify-center  p-8 gap-4 min-h-[100vh]">
+    <form onSubmit={register} className="text-inverse
+     w-[90%] sm:w-[30rem] mx-auto flex flex-col items-center justify-center  p-8 gap-4 min-h-[100vh]">
         <div className="grid gap-2 w-full">
             <label htmlFor="fullName" >Full Name</label>
             <input type="text" id='fullName' name='fullName' className="bg-transparent text-inverse border border-gray-500 rounded p-2"/>
@@ -40,8 +42,9 @@ const Register = () => {
         <div className="w-full grid gap-4">
             <button className="boder bg-primary text-accent w-full py-2 rounded">Register</button>
         </div>
+        <p>Already have an account? <Link href="/register">Log In</Link></p>
     </form>
-    <div className='fixed bottom-8 right-10 md:hidden border-2 border-primary p-3 rounded-[50%] text-primary cursor-pointer'>
+    <div className='fixed bottom-8 right-10  border-2 border-primary p-3 rounded-[50%] text-primary cursor-pointer'>
         <ThemeButton/>
     </div>
     </>
