@@ -22,7 +22,7 @@ const reviews = [
     {
         name: "somebody",
         title:"client",
-        review: "5repellatAsperiores,  veniam earum quidem ducimus soluta ullam quis commodi,  vel at dolorum deserunt placeat distinctio eveniet ex, dicta, maiores cumque harum!"
+        review: "5repellatAsperires,  veniam earum quidem ducimus soluta ullam quis commodi,  vel at dolorum deserunt placeat distinctio eveniet ex, dicta, maiores cumque harum!"
     },
     {
         name: "somebody",
