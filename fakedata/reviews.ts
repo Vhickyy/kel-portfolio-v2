@@ -1,6 +1,6 @@
 const reviews = [
     {
-        name: "somebody",
+        name: "isomebody",
         title:"client",
         review: "1Asperiores, repellat veniam earum quidem ducimus soluta ullam quis commodi, tibus vel at dolorum deserunt placeat distinctio eveniet ex, dicta, maiores cumque harum!"
     },
